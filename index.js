@@ -18,9 +18,10 @@ try{
     axios.post(hashiCorpEndpoint, request, options)
       .then((response) => {
         console.log("success:"+ JSON.stringify(response.data));
+        core.setOutput("workSpaceId", response.data.data.id);
       }, (error) => {
-        console.error("error:"+JSON.stringify(error));
-        output = error;
+        console.error("error:"+JSON.stringify(error.response.data));
+        core.setFailed(error.message);
       });
 
 } catch(error){
