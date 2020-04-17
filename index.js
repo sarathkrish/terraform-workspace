@@ -17,7 +17,7 @@ try{
 
     axios.post(hashiCorpEndpoint, request, options)
       .then((response) => {
-        console.log("success:"+JSON.stringify(response));
+        console.log("success:"+response);
       }, (error) => {
         console.error("error:"+JSON.stringify(error));
         output = error;
