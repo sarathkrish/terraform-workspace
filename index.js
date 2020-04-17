@@ -11,7 +11,7 @@ try{
     const hashiCorpEndpoint = "https://app.terraform.io/api/v2/organizations/"+organizationName+"/workspaces";
     const options = {
         headers: {'Content-Type': 'application/vnd.api+json',
-                  'Authorization': 'Basic '+token
+                  'Authorization': 'Bearer '+token
                 }       
     };
 
