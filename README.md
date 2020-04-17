@@ -1,8 +1,8 @@
 # Terraform Workspace action
 
-This action create Terraform Workspace using Terraform API
-https://app.terraform.io/api/v2/organizations/YourOrganization/workspaces"
-API reference: https://www.terraform.io/docs/cloud/api/workspaces.html
+This action create Terraform Workspace using Terraform API  
+https://app.terraform.io/api/v2/organizations/YourOrganization/workspaces"  
+API reference: https://www.terraform.io/docs/cloud/api/workspaces.html  
 
 ## Inputs
 
@@ -26,8 +26,8 @@ API reference: https://www.terraform.io/docs/cloud/api/workspaces.html
 
 ## Example usage
 
-uses: sarathkrish/terraform-workspace@pre-release6
-with:
-    workSpaceName: MyTestWorkspace
-    organizationName: env.organization
-    terraformToken: secrets.Terraform_Token
+uses: sarathkrish/terraform-workspace@pre-release6  
+with:  
+    workSpaceName: MyTestWorkspace  
+    organizationName: env.organization  
+    terraformToken: secrets.Terraform_Token  
