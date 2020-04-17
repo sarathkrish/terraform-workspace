@@ -8,14 +8,14 @@ try{
     let request = { data : { attributes: { name : workSpaceName, type: "workspaces"}}};
     console.log("request:" + JSON.stringify(request));
 
-    const hashiCorpEndpoint = "https://app.terraform.io/api/v2/organizations/"+organizationName+"/workspaces";
+    const terraformEndpoint = "https://app.terraform.io/api/v2/organizations/"+organizationName+"/workspaces";
     const options = {
         headers: {'Content-Type': 'application/vnd.api+json',
                   'Authorization': 'Bearer '+token
                 }       
     };
-
-    axios.post(hashiCorpEndpoint, request, options)
+   // Invoking Terraform API
+    axios.post(terraformEndpoint, request, options)
       .then((response) => {
         console.log("success:"+ JSON.stringify(response.data));
         core.setOutput("workSpaceId", response.data.data.id);
