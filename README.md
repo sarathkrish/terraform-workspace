@@ -28,6 +28,6 @@ API reference: https://www.terraform.io/docs/cloud/api/workspaces.html
 
 uses: sarathkrish/terraform-workspace@pre-release6  
 with:  
-    workSpaceName: MyTestWorkspace  
-    organizationName: env.organization  
-    terraformToken: secrets.Terraform_Token  
+  workSpaceName: MyTestWorkspace  
+  organizationName: env.organization  
+  terraformToken: secrets.Terraform_Token  
